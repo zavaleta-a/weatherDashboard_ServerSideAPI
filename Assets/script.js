@@ -6,3 +6,6 @@ var city;
 
 // creating queryURL for API call
 var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" +city + "&appid=" + APIKey;
+
+// creating a fetch to call the API
+fetch(queryURL)
