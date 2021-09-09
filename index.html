@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    
     <title>Weather Dashboard</title>
 
-<!-- Link CSS-->
-<link rel="stylesheet" href="./Assets/style.css">
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="./Assets/style.css">
 </head>
-<!-- Aside city search -->
+<!-- City search -->
 <body>
     <header>Weather Dashboard</header>
     
-    <aside>
-        <h1>Search for City</h1>
-        <input type="text" placeholder="Search...">
-        <button class="searchBtn">Search</button>
-    </aside>
+    <div class="container">
+        <div class="searchCard">
+            <h1>Search for City</h1>
+            <input type="text" class="search" placeholder="Search...">
+            <button class="searchBtn">Search</button>
+        </div> 
+
+        <!-- List of search history-->
+        <ul class="group-list"></ul>
+
+    </div>
+
 
     <!-- Section for current weather -->
-    <section>Current Weather</section>
+    <section class="currWeather">Current Weather</section>
 
 
     <!-- Separate section for 5 day forecast -->
-
+    <section class="fiveDayForecast">5 Day Forecast</section>
 
 
 <!-- Link JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="./Assets/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 </body>
 </html>

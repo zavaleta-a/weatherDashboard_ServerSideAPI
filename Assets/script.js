@@ -1,5 +1,5 @@
 // creating a variable to save API Key for future use
-var APIKey = "a4594417e70fc201979b8f330a80381f"
+var APIKey = "3e8323c3bc76543d4bab7d153158546d"
 
 // creating a variable for the city we want the weather for
 var city;
